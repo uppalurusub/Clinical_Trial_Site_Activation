@@ -1,0 +1,87 @@
+
+{
+  "study_id": "STUDY-ONCO-2026-001",
+  "site_id": "SITE-HYD-001",
+  "documents": [
+    {
+      "document_id": "DOC-001",
+      "document_type": "Protocol_Training_Certificate",
+      "status": "received",
+      "issue_date": "2026-09-15",
+      "expiry_date": "2027-09-15",
+      "version": "1.0",
+      "source_ref": "CTMS-DOC-001"
+    },
+    {
+      "document_id": "DOC-002",
+      "document_type": "Investigator_CV",
+      "status": "received",
+      "issue_date": "2025-08-01",
+      "expiry_date": "2026-08-01",
+      "version": "2.0",
+      "source_ref": "CTMS-DOC-002"
+    },
+    {
+      "document_id": "DOC-003",
+      "document_type": "GCP_Training_Certificate",
+      "status": "received",
+      "issue_date": "2026-07-10",
+      "expiry_date": "2027-07-10",
+      "version": "1.0",
+      "source_ref": "CTMS-DOC-003"
+    }
+  ],
+  "responses": [
+    {
+      "study_id": "STUDY-ONCO-2026-001",
+      "site_id": "SITE-HYD-001",
+      "response_id": "RESP-001",
+      "response_text": "We have uploaded the updated GCP training certificate. The investigator CV is being revised and will be submitted by 25 October 2026.",
+      "action_id": "ACT-001",
+      "action_description": "Obtain the updated investigator CV",
+      "source_ref": "EMAIL-RESP-001",
+      "received_at": "2026-10-20T06:06:10.897Z"
+    },
+    {
+      "study_id": "STUDY-ONCO-2026-001",
+      "site_id": "SITE-HYD-001",
+      "response_id": "RESP-002",
+      "response_text": "The signed delegation log is still pending approval from the principal investigator.",
+      "action_id": "ACT-002",
+      "action_description": "Obtain the signed delegation log",
+      "source_ref": "EMAIL-RESP-002",
+      "received_at": "2026-10-20T07:15:00Z"
+    }
+  ],
+  "actions": [
+    {
+      "action_id": "ACT-001",
+      "study_id": "STUDY-ONCO-2026-001",
+      "site_id": "SITE-HYD-001",
+      "action_title": "Obtain updated investigator CV",
+      "owner": "Site Coordinator",
+      "due_date": "2026-10-19",
+      "criticality": "HIGH",
+      "missing_documents": [
+        "Investigator_CV"
+      ],
+      "dependency_blocked": false,
+      "source_ref": "CTMS-ACTION-001"
+    },
+    {
+      "action_id": "ACT-002",
+      "study_id": "STUDY-ONCO-2026-001",
+      "site_id": "SITE-HYD-001",
+      "action_title": "Obtain signed delegation log",
+      "owner": "Principal Investigator",
+      "due_date": "2026-10-22",
+      "criticality": "CRITICAL",
+      "missing_documents": [
+        "Signed_Delegation_Log"
+      ],
+      "dependency_blocked": true,
+      "source_ref": "CTMS-ACTION-002"
+    }
+  ],
+  "as_of": "2026-10-20"
+}
